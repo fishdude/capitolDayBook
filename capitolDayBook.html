@@ -1,0 +1,430 @@
+<head>
+  <title>Capitol DayBook</title>
+</head>
+
+<body>
+  {{> header}}
+</body>
+
+<template name="header">
+   <div class="container" id="nav">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				
+				<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+						 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a id="brandColor"class="navbar-brand" href="/">Capitol Daybook</a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="/">Home</a>
+							</li>
+							<li>
+								
+								<a href="/job-listings">Job Listings</a>
+							</li>
+							<li>
+								<a href="/classifieds">Classifieds</a>
+							</li>
+							<li>
+								<a href="/advertise">Advertise</a>
+							</li>
+							<li>
+								<a href="/contactUs">Contact Us</a>
+							</li>
+							
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+					      <li></li>
+					      
+					    </ul>
+						
+					</div>
+					
+				</nav>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="home">
+	<div class="container">
+        
+        	<div class="row clearfix">
+        		
+				<div class="col-md-12 column">
+					<div id="main" class="opacit">
+						<div class="row clearfix">
+							<div class="col-md-2 column">
+					
+							</div>
+							<div class="col-md-8 column">
+								<div id="homeContent">
+									<h1>Welcome to Capitol Daybook!</h1>
+									<b>
+									<p>Thank you for visiting Capitol Daybook. Here at Capitol Daybook, our mission is to help job seekers find government and political jobs in and around Sacramento. We know it can be hard trying to find a job opening, so listed here are all government, legislative and political job openings within Sacramento. Please keep checking back as jobs will be updated constantly. Our job postings cater to anyone, from people seeking entry-level to executive positions.</p>
+									<p><a href="/job-listings" class="btn btn-primary btn-lg" role="button">View Listings &raquo;</a></p>
+									<p>If a company or office would like to place a listing on this site for FREE, please e-mail it to Capitoldaybook@gmail.com.</p>
+									<ul>
+										<li>All listings must be 100 words or less.</li>
+										<li>In the listing please list the name of the employer, job title, short job description and a contact email or web address for applicants to contact you.</li>
+									</ul>
+									<p>The most recent listings will appear at the top of each section and will remain listed for 2 weeks unless otherwise noted. Next to each listing will be the expiration date.</p>
+									</b>
+								</div>
+							</div>
+							<div class="col-md-2 column">
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+		
+    </div>  
+</template>
+
+<template name="jobListings">
+	<div class="container">
+        
+        	<div class="row clearfix">
+        		
+				<div class="col-md-12 column">
+					<div id="main" >
+						<div class="row clearfix">
+							<div class="col-md-3 column">
+					
+							</div>
+							<div class="col-md-6 column">
+								<div id="listingContent">
+									<h1>--Job Listings--</h1>
+									{{> jobPosts}}
+								</div>
+							</div>
+							<div class="col-md-3 column">
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+		
+    </div>  
+</template>
+
+<template name="admin_login">
+	<div class="container">
+        
+        	<div class="row clearfix">
+	        	<div class="col-md-3 column">
+	        		
+	        	</div>
+	        	<div class="col-md-6 column">
+	        		<div id="admeezy" class="opacit">
+	        			<h1> Admin Login!</h1>
+								<hr>
+								<form id="login-form" action="action">
+									<div class="form-group-lg inputMargin">
+									    <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+									</div>
+									<div class="form-group-lg inputMargin">
+									    <input type="password" class="form-control" id="login-password" placeholder="Enter password">
+									</div>
+									<div class="form-group-lg">
+										<input type="submit" id="login-button" class="btn btn-primary" value="Log in" />
+									</div>
+								</form>
+	        		</div>
+	        	</div>
+	        	<div class="col-md-3 column">
+	        		
+	        	</div>
+			
+				
+			</div>
+		
+    </div>  
+
+</template>
+
+<template name="classifieds">
+	<div class="container">
+        <div class="row clearfix">
+        		
+				<div class="col-md-12 column">
+					<div id="main" >
+						<div class="row clearfix">
+							<div class="col-md-3 column">
+					
+							</div>
+							<div class="col-md-6 column">
+								<div id="listingContent">
+									<h1>--Classifieds--</h1>
+									{{> classifiedPosts}}
+								</div>
+							</div>
+							<div class="col-md-3 column">
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				
+			</div>
+        	
+		
+    </div>  
+</template>
+
+<template name="advertise">
+	<div class="container">
+        
+        	<div class="row clearfix">
+        		<div class="col-md-1 column">
+					
+				</div>
+				<div class="col-md-10 column">
+					<div id="main">
+						<div class="row clearfix">
+							
+							<div class="col-md-12 column">
+								<div id="advertiseContent">
+									<h1>Advertise your buisness with Capitol Daybook</h1>
+									<p>Thank you for your interest in advertising on Capitol Daybook. The standard ad rate is $30 per month (net) for placement in the right or left column  the Home page. All the ads in the column move up, as preceding advertisers end their run. </p>
+									<p>The standard ad size for our website is 120 pixels wide by 90 pixels deep. You could use a .gif, .jpeg .swf format or email us a banner code. As long as we can figure out how to put the format on the site, we will make it work.</p>
+									<p>If you would like to display a larger ad on a different part of the site, we are open to negotiation.</p>
+									<p>If you would like to advertise on our site, please email your ad and how long you would like it to run to CapitolDaybook@gmail.com. We will post the ad on the site before accepting payment to make sure you are pleased. Currently we only accept payment through Paypal</p>
+									<p>We do offer discounts the longer you would like to advertise on the site for as you can see below:</p>
+									<ul>
+										<li>1 Month - $30</li>
+										<li>3 Months - $75</li>
+										<li>6 Months – $150</li>
+										<li>9 Months - $225</li>
+										<li>12 Months $300</li>
+
+									</ul>
+									<b>*Once an ad is purchased, it is locked in for that price until the end of that advertising period. In the future rates are subject to change.</b>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-1 column">
+					
+				</div>
+			</div>
+		
+    </div>  
+</template>
+
+<template name="contactUs">
+	<div class="container">
+        
+        	<div class="row clearfix">
+        		<div class="col-md-3 column">
+					
+				</div>
+				<div class="col-md-6 column">
+					<div id="main">
+						<div class="row clearfix">
+							
+							<div class="col-md-12 column">
+								<div id="contactUsContent">
+									<h1>Contact us</h1>
+									<fieldset>
+										<form name="contactForm">
+											<div id="fullName_contact"class="input-group-lg inputMargin">
+										  		<input type="text" class="form-control" id="name" placeholder="Full name">
+											</div>
+											<div id="email_contact"class="input-group-lg inputMargin">
+										  		<input type="text" class="form-control" id="email" placeholder="email">
+											</div>
+											<div id="message_contact"class="input-group-lg inputMargin">
+												<textarea class="form-control" id="message" placeholder="message" rows="5"></textarea>
+											</div>
+											<div class="input-group-lg">
+									            <input type="submit" value="Send Message" class="btn btn-primary"/>
+									        </div>
+										</form>
+									</fieldset>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-3 column">
+					
+				</div>
+			</div>
+		
+    </div>  
+</template>
+
+<template name="adminJobPosts">
+	{{#each alistings}}
+		<div id="posts">
+			<h3><a href="{{applicationUrl}}">{{employerName}} <a/></h3>
+			<b>{{positionTitle}}:</b>
+			<p>{{jobDescription}}</p>
+			<b>Expires:{{expiration}}</b>
+			<div class="input-group-lg" id="deleteButton">
+				<a class="btn btn-danger btn-mini btnFileDelete">Remove</a>
+			</div>
+		</div>
+		
+	{{/each}}
+
+</template>
+<template name="adminClassifiedPosts">
+	{{#each acListings}}
+		<div id="posts">
+			<h3>{{title}}</h3>
+			<p>{{information}}</p>
+			<p><a href="{{contact}}">More Information here!</a></p>
+			<b>Expires:{{expiration}}</b>
+			<div class="input-group-lg" id="deleteButton">
+				<a class="btn btn-danger btn-mini btnFileDelete">Remove</a>
+			</div>
+		</div>
+		
+	{{/each}}
+
+</template>
+
+
+
+<template name="jobPosts">
+	{{#each listings}}
+		<div id="posts">
+			<h3><a href="{{applicationUrl}}">{{employerName}} <a/></h3>
+			<b>{{positionTitle}}:</b>
+			<p>{{jobDescription}}</p>
+			<b>Expires:{{expiration}}</b>
+
+		</div>
+
+	{{/each}}
+
+</template>
+
+<template name="classifiedPosts">
+	{{#each cListings}}
+		<div id="posts">
+			<h3>{{title}}</h3>
+			<p>{{information}}</p>
+			<p><a href="{{contact}}">More Information here!</a></p>
+			<b>Expires:{{expiration}}</b>
+
+		</div>
+
+	{{/each}}
+
+</template>
+
+
+
+<template name="admin">
+	<div class="container" >
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div id="adminPanel">
+					<div class="row clearfix">
+						
+						<div class="col-md-12 column">
+							{{loginButtons}}
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-md-6 column">
+							
+							<h1>post new job!</h1>
+							{{> addJobListing}}
+							
+						</div>
+						<div class="col-md-6 column">
+							<h1>post new classified</h1>
+							{{> addClassified}}
+							
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-md-6 column">
+							<div id="adminViewPosts">
+								<h1>Published jobs:</h1>
+								{{> adminJobPosts}}
+							</div>
+						</div>
+						<div class="col-md-6 column">
+							<div id="adminViewPosts">
+								<h1>Published Classifieds:</h1>
+								{{> adminClassifiedPosts}}
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template name="addJobListing">
+	<fieldset>
+								<form name="newJob" id="newJob">
+									<div id="employerName_field"class="input-group-lg inputMargin">
+								  		<input type="text" class="form-control" id="employerName" placeholder="Employer Name">
+									</div>
+									<div id="positionTitle_field"class="input-group-lg inputMargin">
+								  		<input type="text" class="form-control" id="positionTitle" placeholder="Position Title">
+									</div>
+									<div id="contactEmail_field"class="input-group-lg inputMargin">
+								  		<input type="text" class="form-control" id="contactEmail" placeholder="Contact Email">
+									</div>
+									<div id="applicationUrl_field"class="input-group-lg inputMargin">
+								  		<input type="text" class="form-control" id="applicationUrl" placeholder="URL to Job application">
+									</div>
+									<div id="expiration_field"class="control-group inputMargin">
+									<label>Expiration Date:</label>
+								  		<input type="date" name="expiration" id="expiration">
+									</div>
+									<div id="jobDescription_field"class="input-group-lg inputMargin">
+										<textarea class="form-control" id="jobDescription" placeholder="Job description" rows="5"></textarea>
+									</div>
+									<div class="input-group-lg">
+							            <input type="submit" value="Publish Job listing" class="btn btn-primary"/>
+							        </div>
+								</form>
+							</fieldset>
+</template>
+
+<template name="addClassified">
+	<form name="newClassified" id="newClassified">
+		<div id="classifiedTitle_field"class="input-group-lg inputMargin">
+			<input type="text" class="form-control" id="classifiedTitle" placeholder="Classified post title">
+		</div>
+		<div id="classifiedDescription_field"class="input-group-lg inputMargin">
+			<textarea class="form-control" id="classifiedDescription" placeholder="Classified description" rows="5"></textarea>
+		</div>
+		<div id="classifiedContact_field"class="input-group-lg inputMargin">
+			<input type="text" class="form-control" id="classifiedContact" placeholder="Contact information URL/phone #/email">
+		</div>
+		<div id="expiration_field"class="control-group inputMargin">
+			<label>Expiration Date:</label>
+			<input type="date" name="expiration_classified" id="expiration_classified">
+		</div>
+		<div class="input-group-lg">
+			<input type="submit" value="Publish classified" class="btn btn-primary"/>
+		</div>
+	</form>
+</template>
