@@ -128,13 +128,8 @@ if (Meteor.isServer) {
     if (Meteor.users.find().count() === 0) {
       Accounts.createUser({
         password: 'ilooklikecornelwest',
-        email: 'dfriedman007@gmail.com',
-      }, function (err) {
-        if (err) {
-          console.log("admin account creation failed");
-        } else {
-          console.log("admin account creation success");
-        }
+        email: 'dfriedman007@gmail.com'
+      
       });
     }
   });
